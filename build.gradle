@@ -1,0 +1,24 @@
+buildscript {
+    ext.targetSdkVersion    = 27
+    ext.minSdkVersion    = 14
+    ext.supportVersion     = '27.0.2'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
