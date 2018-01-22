@@ -8,7 +8,7 @@ It also makes it possible to make an infinitely scrolling list based on the `Pag
 ```
 MIT License
 
-Copyright (c) 2018 Vitaly Nikonorov (@VitalyNikonorov)
+Copyright (c) 2017 Vitaly Nikonorov (@VitalyNikonorov)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
