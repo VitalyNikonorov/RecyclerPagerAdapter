@@ -1,7 +1,12 @@
 buildscript {
-    ext.targetSdkVersion    = 27
-    ext.minSdkVersion    = 14
-    ext.supportVersion     = '27.0.2'
+
+    project.ext {
+        buildToolsVersion = "27.0.3"
+        minSdkVersion = 14
+        targetSdkVersion = 27
+        compileSdkVersion = 27
+        supportVersion = '27.0.2'
+    }
 
     repositories {
         google()
