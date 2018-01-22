@@ -17,8 +17,8 @@ import net.nikonorov.library.RecyclerPagerAdapter;
 class MainPagerAdapter extends RecyclerPagerAdapter<MainPagerAdapter.ViewHolder> {
 
     private final String[] titles;
-    private final @ColorRes
-    int[] colors;
+    @ColorRes
+    private final int[] colors;
 
     MainPagerAdapter(String[] titles, int[] colors) {
         if (colors.length != titles.length) throw new IllegalArgumentException("Titles and colors should be the same number!");
