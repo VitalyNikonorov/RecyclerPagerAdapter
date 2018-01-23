@@ -1,5 +1,23 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'recycler-pager-adapter'
+    publishedGroupId = 'net.nikonorov'
+    libraryName = 'recycler-pager-adapter'
+    artifact = 'recycler-pager-adapter'
+    siteUrl = 'https://github.com/VitalyNikonorov/RecyclerPagerAdapter'
+    gitUrl = 'https://github.com/VitalyNikonorov/RecyclerPagerAdapter.git'
+    libraryDescription = 'Adoptation of ViewPager for RecyclerView API'
+    libraryVersion = '0.9.1'
+    developerId = 'vitalynikonorov'
+    developerName = 'Vitaly Nikonorov'
+    developerEmail = 'email@nikonorov.net'
+    licenseName = 'The MIT License'
+    licenseUrl = 'https://raw.githubusercontent.com/VitalyNikonorov/RecyclerPagerAdapter/master/LICENSE'
+    allLicenses = ["MIT"]
+}
+
 android {
     compileSdkVersion parent.ext.targetSdkVersion
     buildToolsVersion parent.ext.buildToolsVersion
@@ -21,3 +39,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
