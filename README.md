@@ -1,5 +1,6 @@
 # RecyclerPagerAdapter
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/VitalyNikonorov/RecyclerPagerAdapter.svg?branch=master)](https://travis-ci.org/VitalyNikonorov/RecyclerPagerAdapter)
 
 RecyclerPagerAdapter is a lightweight library that provide an ability for using `PagerAdapter` with `RecyclerView` like API. 
 It also makes it possible to make an infinitely scrolling list based on the `PagerAdapter`.
