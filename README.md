@@ -30,7 +30,7 @@ For using endless ViewPager setup like this:
 ```java
 pagerAdapter.setInfiniteAdapter(true);
 pager.setAdapter(pagerAdapter);
-pager.setCurrentItem(infiniteAdapter ? Integer.MAX_VALUE / 2 - (Integer.MAX_VALUE / 2) % yourDataArray.length : 0);
+pager.setCurrentItem(Integer.MAX_VALUE / 2 - (Integer.MAX_VALUE / 2) % yourDataArray.length);
 ```
 
 Where `yourDataArray` - array of data, set in adapter (with `Collections` use `.size()`)
