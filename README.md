@@ -23,7 +23,17 @@ Add your own adapter class (e.g. `MyAdapter`) and extend library's `RecyclerPage
 class MyAdapter extends RecyclerPagerAdapter<MainPagerAdapter.ViewHolder> 
 ```
 
-Override abstract methods like for `RecyclerView` and set it for your `ViewPager`
+Override abstract methods like for `RecyclerView` and set it for your `ViewPager`.
+
+For using endless ViewPager setup like this:
+
+```java
+pagerAdapter.setInfiniteAdapter(true);
+pager.setAdapter(pagerAdapter);
+pager.setCurrentItem(infiniteAdapter ? Integer.MAX_VALUE / 2 - (Integer.MAX_VALUE / 2) % yourDataArray.length : 0);
+```
+
+Where `yourDataArray` - array of data, set in adapter (with `Collections` use `.size()`)
 
 ## License
 ```
