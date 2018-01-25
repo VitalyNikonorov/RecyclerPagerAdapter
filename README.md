@@ -9,6 +9,22 @@ It also makes it possible to make an infinitely scrolling list based on the `Pag
 
 <img src="https://github.com/VitalyNikonorov/RecyclerPagerAdapter/blob/master/static-files/endless.gif"/>
 
+## Usage
+
+```groovy
+dependencies {
+    implementation 'net.nikonorov:recycler-pager-adapter:0.5.1'
+}
+```
+
+Add your own adapter class (e.g. `MyAdapter`) and extend library's `RecyclerPagerAdapter`
+
+```java
+class MyAdapter extends RecyclerPagerAdapter<MainPagerAdapter.ViewHolder> 
+```
+
+Override abstract methods like for `RecyclerView` and set it for your `ViewPager`
+
 ## License
 ```
 MIT License
