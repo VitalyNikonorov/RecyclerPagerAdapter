@@ -5,6 +5,8 @@
 RecyclerPagerAdapter is a lightweight library that provide an ability for using `PagerAdapter` with `RecyclerView` like API. 
 It also makes it possible to make an infinitely scrolling list based on the `PagerAdapter`.
 
+## Demo
+
 <img src="https://github.com/VitalyNikonorov/RecyclerPagerAdapter/blob/master/static-files/endless.gif"/>
 
 ## License
