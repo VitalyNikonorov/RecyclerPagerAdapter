@@ -1,4 +1,4 @@
-package net.nikonorov.library;
+package net.nikonorov.recyclerpageradaptersample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("net.nikonorov.library.test", appContext.getPackageName());
+        assertEquals("net.nikonorov.recyclerpageradaptersample", appContext.getPackageName());
     }
 }

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.nikonorov.recyclerpageradapter">
+    package="net.nikonorov.recyclerpageradaptersample">
 
     <application
         android:allowBackup="true"

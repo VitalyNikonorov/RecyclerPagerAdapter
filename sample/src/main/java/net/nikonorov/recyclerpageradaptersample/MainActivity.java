@@ -1,9 +1,11 @@
-package net.nikonorov.recyclerpageradapter;
+package net.nikonorov.recyclerpageradaptersample;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+
+import net.nikonorov.recyclerpageradaptersample.R;
 
 /**
  * Created by Vitaly Nikonorov on 22.01.2018.

@@ -1,4 +1,4 @@
-package net.nikonorov.recyclerpageradapter;
+package net.nikonorov.recyclerpageradaptersample;
 
 import android.support.annotation.ColorRes;
 import android.support.annotation.NonNull;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import net.nikonorov.library.RecyclerPagerAdapter;
+import net.nikonorov.recyclerpageradapter.RecyclerPagerAdapter;
 
 /**
  * Created by Vitaly Nikonorov on 22.01.2018.

@@ -5,7 +5,7 @@ android {
     buildToolsVersion parent.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "net.nikonorov.recyclerpageradapter"
+        applicationId "net.nikonorov.recyclerpageradaptersample"
         minSdkVersion parent.ext.minSdkVersion
         targetSdkVersion parent.ext.targetSdkVersion
         versionCode 1
@@ -19,6 +19,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:$parent.ext.supportVersion"
     implementation project(':library')
+//    implementation 'net.nikonorov:recycler-pager-adapter:0.5.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

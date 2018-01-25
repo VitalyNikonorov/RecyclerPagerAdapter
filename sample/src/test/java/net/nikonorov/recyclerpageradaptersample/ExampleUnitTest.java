@@ -1,4 +1,4 @@
-package net.nikonorov.library;
+package net.nikonorov.recyclerpageradaptersample;
 
 import org.junit.Test;
 
