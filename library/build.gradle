@@ -10,7 +10,7 @@ ext {
     siteUrl = 'https://github.com/VitalyNikonorov/RecyclerPagerAdapter'
     gitUrl = 'https://github.com/VitalyNikonorov/RecyclerPagerAdapter.git'
     libraryDescription = 'Adoptation of ViewPager for RecyclerView API'
-    libraryVersion = '0.5.0'
+    libraryVersion = '0.5.1'
     developerId = 'vitalynikonorov'
     developerName = 'Vitaly Nikonorov'
     developerEmail = 'email@nikonorov.net'
@@ -27,7 +27,7 @@ android {
         minSdkVersion parent.ext.minSdkVersion
         targetSdkVersion parent.ext.targetSdkVersion
         versionCode 1
-        versionName "0.5.0"
+        versionName "0.5.1"
         archivesBaseName = "recycler-pager-adapter"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
