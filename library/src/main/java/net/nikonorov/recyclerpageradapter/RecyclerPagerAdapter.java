@@ -16,6 +16,7 @@ import java.util.List;
 
 public abstract class RecyclerPagerAdapter<VH extends RecyclerPagerAdapter.ViewHolder> extends PagerAdapter {
     private static final String TAG = RecyclerPagerAdapter.class.getSimpleName();
+    private static final boolean LOGGING_ACTIVE = false;
 
     private static final int DEFAULT_VIEW_POOL_SIZE = 5;
     private final List<View> viewPool = new ArrayList<>(DEFAULT_VIEW_POOL_SIZE);
@@ -44,18 +45,24 @@ public abstract class RecyclerPagerAdapter<VH extends RecyclerPagerAdapter.ViewH
 
     @Override
     public Object instantiateItem(@NonNull ViewGroup collection, int position) {
-        Log.d(TAG, String.format("Instantiate item start, position = %d", position));
+        if (LOGGING_ACTIVE) {
+            Log.d(TAG, String.format("Instantiate item start, position = %d", position));
+        }
         VH holder;
         View itemView;
         if (!viewPool.isEmpty()) {
             itemView = viewPool.get(viewPool.size() - 1);
             viewPool.remove(itemView);
             holder = (VH) itemView.getTag();
-            Log.d(TAG, "Item got from view pool");
+            if (LOGGING_ACTIVE) {
+                Log.d(TAG, "Item got from view pool");
+            }
         } else {
             holder = onCreateViewHolder(collection, getItemViewType(position));
             holder.itemView.setTag(holder);
-            Log.d(TAG, "Item instantiated as a new view");
+            if (LOGGING_ACTIVE) {
+                Log.d(TAG, "Item instantiated as a new view");
+            }
         }
         onBindViewHolder(holder, position);
         collection.addView(holder.itemView);
@@ -64,13 +71,17 @@ public abstract class RecyclerPagerAdapter<VH extends RecyclerPagerAdapter.ViewH
 
     @Override
     public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        Log.d(TAG, String.format("Destroy item on position = %d", position));
+        if (LOGGING_ACTIVE) {
+            Log.d(TAG, String.format("Destroy item on position = %d", position));
+        }
         View itemView = (View) object;
         container.removeView(itemView);
         if (viewPool.size() < viewPoolSize) {
             viewPool.add(itemView);
         }
-        Log.d(TAG, String.format("Item destroyed, position = %d", position));
+        if (LOGGING_ACTIVE) {
+            Log.d(TAG, String.format("Item destroyed, position = %d", position));
+        }
     }
 
     public void setInfiniteAdapter(boolean infiniteAdapter) {
@@ -82,12 +93,14 @@ public abstract class RecyclerPagerAdapter<VH extends RecyclerPagerAdapter.ViewH
     }
 
     public void setViewPoolSize(int viewPoolSize) {
-        if (viewPoolSize < 0) throw new IllegalArgumentException("Size of view pool can not be negative number");
+        if (viewPoolSize < 0)
+            throw new IllegalArgumentException("Size of view pool can not be negative number");
         this.viewPoolSize = viewPoolSize;
     }
 
     public abstract static class ViewHolder {
         public final View itemView;
+
         public ViewHolder(View itemView) {
             this.itemView = itemView;
         }
