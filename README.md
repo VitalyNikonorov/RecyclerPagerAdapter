@@ -1,5 +1,6 @@
 # RecyclerPagerAdapter
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/VitalyNikonorov/RecyclerPagerAdapter.svg?branch=master)](https://travis-ci.org/VitalyNikonorov/RecyclerPagerAdapter)
 [ ![Download](https://api.bintray.com/packages/vitalynikonorov/maven/recycler-pager-adapter/images/download.svg) ](https://bintray.com/vitalynikonorov/maven/recycler-pager-adapter/_latestVersion)
 
 RecyclerPagerAdapter is a lightweight library that provide an ability for using `PagerAdapter` with `RecyclerView` like API. 
