@@ -14,7 +14,7 @@ It also makes it possible to make an infinitely scrolling list based on the `Pag
 
 ```groovy
 dependencies {
-    implementation 'net.nikonorov:recycler-pager-adapter:0.5.1'
+    implementation 'net.nikonorov:recycler-pager-adapter:0.5.2'
 }
 ```
 
